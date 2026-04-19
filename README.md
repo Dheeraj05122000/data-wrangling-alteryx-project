@@ -78,7 +78,8 @@ screenshots/
 
 ## Dashboard Preview
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](<img width="1920" height="1200" alt="dashboard" src="https://github.com/user-attachments/assets/2446f678-38f2-4f1f-974d-9a7b0f511ca2" />
+)
 
 ---
 
