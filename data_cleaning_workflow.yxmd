@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>raw_data.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Customer ID" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Age" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Gender" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Item Purchased" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Category" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Purchase Amount (USD)" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Location" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Size" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Color" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Season" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Review Rating" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Subscription Status" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Payment Method" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Shipping Type" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Discount Applied" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Promo Code Used" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Previous Purchases" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Preferred Payment Method" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+            <Field name="Frequency of Purchases" size="254" source="File: C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\raw_data.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DataCleansePro.DataCleansePro">
+        <Position x="282" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RemoveNullRows value="False" />
+          <RemoveNullColumns value="False" />
+          <RemoveTabsLineBreaksAndDuplicates value="False" />
+          <RemoveLeadingAndTrailingWhitespace value="True" />
+          <RemoveAllWhitespaces value="False" />
+          <RemoveHTMLTags value="False" />
+          <RemoveInvisibleCharacters value="False" />
+          <Fields>
+            <Field value="Customer ID" selected="True" />
+            <Field value="Age" selected="True" />
+            <Field value="Gender" selected="True" />
+            <Field value="Item Purchased" selected="True" />
+            <Field value="Category" selected="True" />
+            <Field value="Purchase Amount (USD)" selected="True" />
+            <Field value="Location" selected="True" />
+            <Field value="Size" selected="True" />
+            <Field value="Color" selected="True" />
+            <Field value="Season" selected="True" />
+            <Field value="Review Rating" selected="True" />
+            <Field value="Subscription Status" selected="True" />
+            <Field value="Payment Method" selected="True" />
+            <Field value="Shipping Type" selected="True" />
+            <Field value="Discount Applied" selected="True" />
+            <Field value="Promo Code Used" selected="True" />
+            <Field value="Previous Purchases" selected="True" />
+            <Field value="Preferred Payment Method" selected="True" />
+            <Field value="Frequency of Purchases" selected="True" />
+            <Field value="*Unknown" selected="True" />
+          </Fields>
+          <RemoveLetters value="False" />
+          <RemoveNumbers value="False" />
+          <RemovePunctuation value="False" />
+          <Letters value="" />
+          <Numbers value="" />
+          <Punctuations value="" />
+          <Exceptions value="" />
+          <Checkbox_ReplaceStringColumns value="False" />
+          <Checkbox_ReplaceNumericColumns value="False" />
+          <radioButton_ReplaceNullwithBlanks value="True" />
+          <radioButton_ReplaceBlankswithNulls value="False" />
+          <radioButton_ReplaceNullwithZero value="True" />
+          <radioButton_ReplaceZerowithNulls value="False" />
+          <ReplaceWithBlanks value="False" />
+          <ReplaceWithZero value="False" />
+          <CheckBox_ModifyCase value="False" />
+          <ModifyCase value="none" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDataCleanse" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="426" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Age" selected="True" type="Int16" size="2" />
+            <SelectField field="Purchase Amount (USD)" selected="True" rename="purchase_amount" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="570" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[[purchase_amount] > 0 AND [Age] < 100
+]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[[purchase_amount] > 0 AND [Age] < 100
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="726" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Age] &lt;= 25 THEN &quot;18-25&quot;&#xA;ELSEIF [Age] &lt;= 40 THEN &quot;26-40&quot;&#xA;ELSE &quot;40+&quot;&#xA;ENDIF" field="age_group" size="1073741823" type="V_WString" enabled="true" />
+            <FormulaField expression="Uppercase(Trim([Gender]))" field="gender_clean" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>age_group = IF [Age] &lt;= 25 THEN "18-25"
+ELSEIF [Age] &lt;= 40 THEN "26-40"
+ELSE "40...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="882" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Github Projects\data-analytics-projects\data-wrangling-alteryx-project\data\cleaned_data.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <MipTenantId />
+            <PreserveFormat>False</PreserveFormat>
+            <MipSensitivity />
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <SuppressBlankFile>False</SuppressBlankFile>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>cleaned_data.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>data_cleaning_workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="b7976e6e-6360-4e96-8cab-759bdeb812b3" />
+      <Telemetry>
+        <PreviousWorkflowId value="da5a22f0-ab55-4967-8441-e22bd3ee2dc6" />
+        <OriginWorkflowId value="da5a22f0-ab55-4967-8441-e22bd3ee2dc6" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
